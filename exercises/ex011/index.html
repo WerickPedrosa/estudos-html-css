@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Medias in HTML5</title>
+</head>
+<body>
+    <h1>Dinamic Images</h1>
+    <p>Try opening this site various different devices or simply change the size of your browser.</p>
+    <picture>
+        <source media="(max-width: 722px)" srcset="images/p-image.png" type="image/png">
+        <source media="(max-width: 1022px)" srcset="images/m-image.png" type="image/png">
+        <img src="images/g-image.png" alt="Flexible Image">
+    </picture>
+    <hr>
+    <h1>Playing Audio</h1>
+    <p>Let's learn how to play audios in HTML5</p>
+    <audio src="media/happy-mistake.mp3" controls></audio>
+    <br>
+    <audio preload="none" controls>
+        <source src="media/guanacast-33.mp3" type="audio/mpeg">
+        <source src="media/guanacast-33.ogg" type="audio/ogg">
+        <source src="media/guanacast-33.wav" type="audio/wav">
+        <p>Unfortunately your browser does not support the audio element. <a href="media/guanacast-33.mp3">Click here to download the MP3 file.</a></p>
+    </audio>
+</body>
+</html>

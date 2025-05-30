@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Videos in HTML5</title>
+</head>
+<body>
+    <h1>Inserting Locally Hosted Videos</h1>
+    <p>This video is beeing hosted on my own server.</p>
+    <video width="600" height="338" controls poster="images/thumbnail.png">
+        <source src="media/my-video.webm" type="video/webm">
+        <source src="media/my-video.mp4" type="video/mp4">
+        <source src="media/my-video.m4v" type="video/m4v">
+        <source src="media/my-video.ogv" type="video/ogg">
+        <p>Your browser ins't compatible with videos.</p>
+    </video>
+    <br>
+    <h1>Inserting Videos from YouTube</h1>
+    <iframe width="600" height="338" src="https://www.youtube.com/embed/OzUnqQk4eOg?si=pV_RGBB9ZAnuquo5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <br>
+    <h1>Inserting Videos from Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/257399106?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="600" height="338" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="ANIMATION REEL"></iframe>
+</html>

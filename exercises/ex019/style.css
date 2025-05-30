@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/*
+  - ID = # (only 1 element)
+  - CLASS = . (various elements)
+*/
+
+body {
+    background-color: #98e6e6;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+h1 {
+    color: #1d414d;
+    text-decoration: underline;
+}
+
+#main {
+    text-align: center;
+    background-color: #205466;
+    color: white;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+
+h2 {
+    color: #0f1e23;
+}
+
+.basic {
+    color: #3c805e;
+}
+
+.intermidiate {
+    color: #807b3c;
+}
+
+.advanced {
+    color: #803c3c;
+}
+
+.highlight {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+}

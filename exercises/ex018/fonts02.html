@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>External Fonts</title>
+
+    <style>
+        @font-face {
+            font-family: Miskan;
+            src: url(fonts/Miskan.otf) format(opentype), url(fonts/Miskan.ttf) format(truetype);
+
+            /*
+            format() Tipes:
+            - 'truetype' (.ttf)
+            - 'opentype' (.otf)
+            - 'embeded-opentype' (.eot)
+            - 'woff' (.woff)
+            - 'truetype-aat' (Apple Advanced Typography)
+            - 'svg' (.svg)
+
+            */
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1, h2 {
+            font-family: Miskan, 'Times New Roman', Times, serif;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Title</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, illo debitis quam consectetur dolore, odit ab quisquam nulla dolor, accusantium pariatur expedita perferendis non nam! Dolor laborum distinctio perferendis consequuntur.</p>
+    <h2>Subtitle</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, molestiae atque? Quisquam maxime itaque ducimus fugiat cumque quos cum iure, illum facere vel deserunt distinctio harum et facilis tempora quaerat.</p>
+</body>
+</html>
