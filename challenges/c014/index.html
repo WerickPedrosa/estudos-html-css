@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Challenge 03</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        thead > tr > th {
+            background-color: rgb(67, 67, 67);
+            color: white;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .subject {
+            text-align: left;
+        }
+
+        .average {
+            background-color: rgb(67, 67, 67);
+            color: white;
+            text-align: left;
+        }
+
+        .average > td {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col" rowspan="2">Area</th>
+                <th scope="col" rowspan="2">Subject</th>
+                <th scope="col" colspan="2">Grades</th>
+                <th scope="col" rowspan="2">Average</th>
+            </tr>
+            <tr>
+                <th scope="col">Grade 1</th>
+                <th scope="col">Grade 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="4">Exact Sciences</th>
+                <td class="subject">Mathematics</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td class="subject">Physics</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td class="subject">Chemistry</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td class="subject">Biology</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr class="average">
+                <th colspan="4">Exact Average</th>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Human Sciences</th>
+                <td class="subject">History</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td class="subject">Geography</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr class="average">
+                <th colspan="4">Human Average</th>
+                <td>0.0</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
