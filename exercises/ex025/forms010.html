@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Part 10</title>
+</head>
+<body>
+    <h1>This Is Where The Forms Really End!</h1>
+    <form action="register.php" method="get" autocomplete="on">
+        <p>
+            <label for="iyear">The Year You Were Born: </label>
+            <input type="number" name="year" id="iyear" min="1900" max="2025" oninput="calcAge()">
+        </p>
+
+        <p>
+            <label for="iage">Your Age Is: </label>
+            <output id="iage">0</output>
+        </p>
+        
+        <p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </p>
+    </form>
+
+    <script>
+        function calcAge() {
+            let atual = new Date().getFullYear()
+            iage.innerHTML = Number(atual) - Number(iyear.value)
+        }
+    </script>
+</body>
+</html>
