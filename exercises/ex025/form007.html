@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Part 07</title>
+</head>
+<body>
+    <h1>The Forms Don't End!!</h1>
+    <form action="register.php" method="post" autocomplete="on">
+        <p>
+            <label for="istate">State: </label>
+            <select name="state" id="istate">
+                <option value="" selected>--- Choose ---</option>
+
+                <optgroup label="South-East Region">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="ES">Espírito Santo</option>
+                </optgroup>
+
+                <optgroup label="North-East Region">
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="PB">Pernambuco</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="ioccu">Occupation: </label>
+            <input type="text" name="occu" id="ioccu" list="occulist">
+            <datalist id="occulist">
+                <option>Teacher</option>
+                <option>Developer</option>
+                <option>Driver</option>
+                <option>Scientist</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Message: </label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </p>
+    </form>
+</body>
+</html>
