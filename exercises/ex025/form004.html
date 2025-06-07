@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Part 04</title>
+</head>
+<body>
+    <h1>Forms Example</h1>
+    <form action="register.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Personal Data</legend>
+            <p>
+                <label for="iname">Name: </label>
+                <input type="text" name="name" id="iname" minlength="5" maxlength="20" required>
+            </p>
+            <p>
+                <label for="iemail">E-mail: </label>
+                <input type="email" name="email" id="iemail" required autocomplete="email">
+            </p>
+            <p>
+                <label for="itel">Telephone: </label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" required pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(XX) XXXXX-XXXX">
+            </p>
+        </fieldset>
+        <!--Study more about RegEx-->
+        <p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </p>
+    </form>
+</body>
+</html>

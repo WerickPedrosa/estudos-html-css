@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Part 05</title>
+</head>
+<body>
+    <h1>More Forms Examples</h1>
+    <form action="register.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Gender</legend>
+            <!--Radio buttons of the same group need to have the same NAME-->
+            <input type="radio" name="gender" id="igmas"  value="M" checked>
+                <label for="igmas">Masculine</label><br>
+            <input type="radio" name="gender" id="igfem" value="F">
+                <label for="igfem">Feminine</label><br>
+        </fieldset>
+        <fieldset>
+            <legend>Favorite Sports</legend>
+            <input type="checkbox" name="sbas" id="isbas" checked>
+                <label for="isbas">Basketball</label><br>
+            <input type="checkbox" name="sfut" id="isfut" checked>
+                <label for="isfut">Football</label><br>
+            <input type="checkbox" name="sswi" id="isswi">
+                <label for="isswi">Swimming</label><br>
+            <input type="checkbox" name="sten" id="isten">
+                <label for="isten">Tenis</label><br>
+        </fieldset>
+        <p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </p>
+    </form>
+</body>
+</html>
