@@ -1,3 +1,80 @@
 @charset "UTF-8";
 
 /*  All The Other Medias */
+
+/* Typical Device Breakpoints
+--------------------------------
+- Small Screens: UP TO 600px
+- Phone: 600px to 768px
+- Tablet: 758px to 992px
+- Desktop: 992px to 1200px
+- Big Screens: MORE THAN 1200px
+*/
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /*TABLETS*/
+    body {
+        background-image: url('../images/back-tablet.jpg');
+    }
+
+    #phone {display: none;}
+    #tablet {display: block;}
+    #print {display: none;}
+    #pc {display: none;}
+    #tv {display: none;}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) { /*DESKTOPS*/
+    body {
+        background-image: url('../images/back-pc.jpg');
+    }
+
+    #phone {display: none;}
+    #tablet {display: none;}
+    #print {display: none;}
+    #pc {display: block;}
+    #tv {display: none;}
+}
+
+@media screen and (min-width: 1200px) { /*BIG SCREENS*/
+    body {
+        background-image: url('../images/back-tv.jpg');
+    }
+
+    #phone {display: none;}
+    #tablet {display: none;}
+    #print {display: none;}
+    #pc {display: none;}
+    #tv {display: block;}
+}
+
+@media print {
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body {
+        background-image: url('../images/back-print.jpg'); /* UNNECESSARY */
+    }
+
+    main {
+        border: 2px solid black;
+        width: 90vw;
+    }
+
+    main::after {
+        content: 'This was printed from www.wericpedrosa.github.io';
+        text-decoration: overline;
+        font-size: 20px;
+    }
+
+    main > h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    #phone { display: none; }
+    #tablet { display: none; }
+    #print { display: block; }
+    #pc { display: none; }
+    #tv { display: none; }
+}
